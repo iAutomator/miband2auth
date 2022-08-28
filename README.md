@@ -4,18 +4,28 @@ You may want to play with Mi Band 2 using a Linux machine. You start `bluetoothc
 
 Mi Band 2 requires a special auth procedure for permanent connection establishment. Without it the device does not execute sent commands and connection gets timed out. miband2auth executes the needed procedure making the device available for interaction.
 
-# Operation
+---
+
+## Installation
+
+One can install the tool directly from the repo with the command
+
+```
+pip install git+https://github.com/iAutomator/miband2auth
+```
+## Operation
 
 The utility can be used either as a standalone script or as a library.
 
-## Standalone script
+### Standalone script
 
 The script authentificates all observed devices on connection. So to use it you need to run it before connecting to the device.
 
-## Library
+### Library
 
 It can be used as a library by any other application intending to control Mi Band 2.
 
-# Acknowledgments
 
-The auth procedure is implemented based on findings of provided at the following page: https://medium.com/machine-learning-world/how-i-hacked-xiaomi-miband-2-to-control-it-from-linux-a5bd2f36d3ad
+## Acknowledgments
+
+The auth procedure is implemented based on findings provided at the following page: https://medium.com/machine-learning-world/how-i-hacked-xiaomi-miband-2-to-control-it-from-linux-a5bd2f36d3ad
